@@ -196,6 +196,7 @@ PRODUCT_PACKAGES += \
 
 # IMS
 PRODUCT_PACKAGES += \
+    libqdMetaData \
     vendor.qti.hardware.camera.device@1.0.vendor
 
 # HW crypto
