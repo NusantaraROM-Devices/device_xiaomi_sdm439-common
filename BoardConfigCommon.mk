@@ -42,6 +42,7 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm439
 TARGET_KERNEL_VERSION := 4.9
 TARGET_KERNEL_CLANG_COMPILE := true
+BOARD_PREBUILT_DTBOIMAGE := device/xiaomi/sdm439-kernel/dtbo.img
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
