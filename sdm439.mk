@@ -391,6 +391,17 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 WITH_DEXPREOPT_DEBUG_INFO := false
 
+# Source
+ifneq ($(findstring aosp, $(TARGET_PRODUCT)),)
+PRODUCT_HOST_PACKAGES += \
+    aapt2 \
+    avbtool \
+    brotli \
+    debugfs \
+    signapk \
+    zipalign
+endif
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
