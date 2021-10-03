@@ -15,7 +15,9 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/Car
 
 ifneq ($(findstring aosp, $(TARGET_PRODUCT)),)
 PRODUCT_SOONG_NAMESPACES += \
-    hardware/qcom-caf/msm8996
+    hardware/qcom-caf/msm8996 \
+    vendor/qcom/opensource/data-ipa-cfg-mgr \
+    vendor/qcom/opensource/dataservices
 endif
 
 # Screen density
