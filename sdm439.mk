@@ -22,7 +22,8 @@ ifneq ($(findstring aosp, $(TARGET_PRODUCT)),)
 PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom-caf/msm8996 \
     vendor/qcom/opensource/data-ipa-cfg-mgr \
-    vendor/qcom/opensource/dataservices
+    vendor/qcom/opensource/dataservices \
+    hardware/qcom-caf/common
 endif
 
 # Screen density
