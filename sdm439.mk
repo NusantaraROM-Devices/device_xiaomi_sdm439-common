@@ -11,21 +11,17 @@ $(call inherit-product, device/xiaomi/sdm439-common/device-hidl.mk)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Utils
-ifneq ($(findstring aosp, $(TARGET_PRODUCT)),)
 $(call inherit-product, $(LOCAL_PATH)/utils.mk)
-endif
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
 
-ifneq ($(findstring aosp, $(TARGET_PRODUCT)),)
 PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom-caf/msm8996 \
     vendor/qcom/opensource/data-ipa-cfg-mgr \
     vendor/qcom/opensource/dataservices \
     hardware/qcom-caf/common \
     vendor/qcom/opensource/commonsys-intf/display
-endif
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -399,7 +395,6 @@ PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 WITH_DEXPREOPT_DEBUG_INFO := false
 
 # Source
-ifneq ($(findstring aosp, $(TARGET_PRODUCT)),)
 PRODUCT_HOST_PACKAGES += \
     aapt2 \
     avbtool \
@@ -407,7 +402,6 @@ PRODUCT_HOST_PACKAGES += \
     debugfs \
     signapk \
     zipalign
-endif
 
 # Telephony
 PRODUCT_PACKAGES += \
