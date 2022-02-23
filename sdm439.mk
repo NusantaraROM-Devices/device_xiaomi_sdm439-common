@@ -20,7 +20,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom-caf/msm8996 \
     vendor/qcom/opensource/data-ipa-cfg-mgr \
     vendor/qcom/opensource/dataservices \
-    hardware/qcom-caf/common \
     vendor/qcom/opensource/commonsys-intf/display
 
 # Screen density
